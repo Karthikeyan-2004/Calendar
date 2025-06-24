@@ -1,0 +1,85 @@
+/* Default day cell style */
+.calendar-day {
+  background-color: #ffffff;
+  color: #1f2937; /* gray-800 */
+  padding: 6px;
+  min-height: 90px;
+  border: 1px solid #e5e7eb;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dates outside the current month - much lighter gray and dim text */
+.calendar-day.other-month {
+  background-color: #f0f0f0;
+  color: #b0b0b0;             /* Light gray text */
+  opacity: 0.5;               /* Dim the whole cell */
+}
+
+/* Highlight today's date */
+.calendar-day.today {
+  border: 2px solid #3b82f6; /* blue-500 */
+  background-color: #e0f2fe; /* blue-100 */
+}
+
+/* Conflict border (optional) */
+.calendar-day.has-conflicts {
+  border-color: #f59e0b; /* amber-500 */
+}
+
+/* Hover effect for better interactivity */
+.calendar-day:hover {
+  background-color: #e5efff;
+}
+
+/* Day number */
+.day-number {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+/* Layout */
+.calendar-weekdays,
+.calendar-row {
+  display: flex;
+}
+
+.weekday-header {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 0;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+.day-events {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .day-events .event-item:nth-child(n+4) {
+    display: none;
+  }
+  
+  .day-events:has(.event-item:nth-child(4)) .more-events {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .day-events .event-item:nth-child(n+3) {
+    display: none;
+  }
+  
+  .day-events:has(.event-item:nth-child(3)) .more-events {
+    display: block;
+  }
+}
+
+.more-events {
+  display: none; /* Hidden by default, shown when needed */
+}
+
+
+

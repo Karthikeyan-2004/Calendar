@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Project Meeting", "date": "2025-06-23", "time": "10:00" },
+  { "id": 2, "title": "Code Review", "date": "2025-06-23", "time": "10:30" },
+  { "id": 3, "title": "Lunch with Team", "date": "2025-06-25", "time": "13:00" }
+]
