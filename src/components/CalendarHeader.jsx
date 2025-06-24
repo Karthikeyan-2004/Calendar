@@ -31,7 +31,6 @@ const CalendarHeader = ({ currentDate, currentView, onNavigate, onToday, onDateC
         <button className="nav-btn" onClick={() => onNavigate("prev")}>
           ‹
         </button>
-        {/* <h2 className="calendar-title">{format(currentDate, getDateFormat())}</h2> */}
         <DatePicker
         selected={currentDate}
         onChange={onDateChange}
