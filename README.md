@@ -29,7 +29,7 @@ Day View
 
 Conflict Highlighting
 
-![Conflict](./screenshots/conflict.png)
+![Conflict](./screenshots/Conflict.png)
 
 
 ## Usage
